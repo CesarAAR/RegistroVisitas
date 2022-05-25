@@ -1,0 +1,7 @@
+{
+  "name": "RegistroVisitas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
