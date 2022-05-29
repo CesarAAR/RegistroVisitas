@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{visit.Matricula}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card text-center>
+    <ion-card-header>
+      <ion-card-subtitle>{{visit.Matricula}}</ion-card-subtitle>
+      <ion-card-title>{{visit.Direccion}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Estacion:<strong>{{visit.Estacion}}</strong></p>
+      <p>Fecha:<strong>{{visit.Fecha}}</strong></p>
+      <p>Hora Entrada:<strong>{{visit.Hora_Entrada}}</strong></p>
+      <p>Hora Salida:<strong>{{visit.Hora_Salida}}</strong></p>
+      <p>Motivo:<strong>{{visit.Motivo_visita}}</strong></p>
+    </ion-card-content>
+  </ion-card>
+  <ion-row>
+    <ion-col>
+      <ion-button expand="block" (click)="onHome()">Salir</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="block" (click)="delete(visit.id)">Eliminar Visita</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
