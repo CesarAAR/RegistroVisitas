@@ -27,6 +27,14 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
+  {
+    path: 'actu-visita',
+    loadChildren: () => import('./actu-visita/actu-visita.module').then( m => m.ActuVisitaPageModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
+  },
 ];
 
 @NgModule({

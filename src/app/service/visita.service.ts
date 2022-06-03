@@ -18,7 +18,7 @@ export class VisitaService {
   }
 
   updateVisita(visit:Visita,id:string){
-    this.firestore.doc('Registro/'+id).update(visit);
+    this.firestore.collection('Registro').doc(id).update(visit);
   }
 
   deleteVisita(id:string){

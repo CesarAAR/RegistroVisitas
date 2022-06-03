@@ -40,6 +40,15 @@ export class HomePage {
     this.router.navigate(['/detail'],navext);
   }
 
+  actuAli(visit:Visita){
+    let navext: NavigationExtras={
+      queryParams:{
+        special: JSON.stringify(visit)
+      }
+    };
+    this.router.navigate(['/actu-visita'],navext);
+  }
+
   onCrearVisita(){
     this.router.navigateByUrl('/new-visita');
   }
