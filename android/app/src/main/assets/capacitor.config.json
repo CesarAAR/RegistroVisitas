@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "RegistroVisitas",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
